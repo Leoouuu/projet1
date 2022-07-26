@@ -1,7 +1,11 @@
+*{
+	box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:sans-serif;
 }
 
 nav{
@@ -10,23 +14,50 @@ nav{
 	padding: 5px;
 }
 
+a{
+	text-decoration: none;
 
-header nav a{
+}
+
+.onglet a{
 	color : black;
 	text-decoration: none;
 	margin-right: 10px;
 }
 
+#logo a{
+	color:green;
+}
+
 .principal{
+	display: flex;
 	background-image: url("image1.jpg");
 	height: 450px;
 	background-size:cover;
-	text-align: right;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-end;
+	padding: 20px 70px;
+
 }
 
-h2{
+.title1{
 	color: white;
 }
-h1{
+
+.title2{
 	color: #d5f31f
+}
+
+.equipe img {
+	object-fit: cover;
+	height: 150px;
+	width: 150px;
+	clip-path:circle();
+}
+
+.equipe {
+	text-align: center;
+	justify-content:flex;
+
 }
