@@ -61,3 +61,42 @@ a{
 	justify-content:flex;
 
 }
+
+.team {
+	display: flex;
+}
+
+.chiffres{
+	display: flex;
+	justify-content: space-between;
+	background-color: #053B44;
+	text-align: center;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+.chiffres p{
+	color: white;
+}
+
+.chiffres h2{
+	color: #d5f31f;
+}
+
+.liste {
+	display: flex;
+	padding-block: 50px;
+	margin-left: 200px;
+	justify-content: space-between;
+	margin-right: 200px;
+}
+
+.services h1{
+	color: #029D5B;
+	text-align: center;
+}
+
+.liste img{
+	height: 100px;
+	width: 120px;
+}
