@@ -88,7 +88,8 @@ a{
 	padding-block: 50px;
 	margin-left: 200px;
 	justify-content: space-between;
-	margin-right: 200px;
+	margin-right: 150px;
+	text-align: center;
 }
 
 .services h1{
