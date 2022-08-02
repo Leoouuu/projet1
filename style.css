@@ -101,3 +101,67 @@ a{
 	height: 100px;
 	width: 120px;
 }
+
+form {
+	background-color: #053B44;
+}
+
+form h2{
+	text-align: center;
+	color:#d5f31f;
+	padding-top: 40px;
+}
+
+form p{
+	text-align: center;
+	color: white;
+	padding-bottom: 30px;
+	
+}
+
+input::placeholder, textarea::placeholder{
+	color:white;
+}
+
+section input, textarea{
+	margin-right: 20px;
+	margin-block: 10px;
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid white;
+}
+
+form > section > div.NC{
+	margin-left: 50px;
+	margin-right: 50px;
+	text-align:center;
+}
+
+form > section > div.TV{
+	margin-left: 50px;
+	margin-right: 50px;
+	text-align:center;
+}
+
+form > section > div.mail{
+	margin-left: 50px;
+	margin-right: 50px;
+	text-align:center;
+}
+
+form > section > div.message{
+	text-align: center;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+textarea{
+	resize: none;
+	font-family:sans-serif;
+}
+
+form > div.bouton{
+	text-align: right;
+	margin-right: 80px;
+}
+
