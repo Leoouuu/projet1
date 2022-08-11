@@ -2,6 +2,10 @@
 <html lang="fr">
     <head>
         <link rel="stylesheet" href="style.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" rel="stylesheet">
     </head>
 
     <body>
@@ -13,25 +17,25 @@
                 </div>
 
                 <div class="onglet">
-                    <a href=""> Accueil </a>
-                    <a href=""> Notre équipe </a>
-                    <a href=""> Nos services </a>
-                    <a href=""> Témoignages </a>
-                    <a href=""> Contactez-nous </a>
-                    <a href=""> Notre galerie </a>
+                    <a href=""> <b>Accueil </b></a>
+                    <a href=""> <b>Notre équipe</b> </a>
+                    <a href=""> <b>Services</b> </a>
+                    <a href=""> <b>Témoignages</b> </a>
+                    <a href=""> <b>Contactez-nous</b> </a>
+                    <a href=""> <b>galerie</b> </a>
                 </div>
 				
             </nav>
             
              <div class="principal"> 
-                <div class="title1"> Bienvenue dans votre </div>
-                <div class="title2">agence web écologique </div>
+                <div class="title1"> <b>Bienvenue dans votre</b> </div>
+                <div class="title2"> <b>agence web écologique </b> </div>
              </div>
         </header>
 		
 	    <article class="equipe">
 		    <section class="description">
-                <h1> Notre équipe </h1>
+                <h2> Notre équipe </h2>
                 <p>Lorem Ipsum dolor Sit amet, consectetur adipiscina elit. Donec sed leo in nisi vehicula
                 bibendum. Aliquam sit amet blandit nisi. sodales molesti.</p>
             </section>
@@ -83,12 +87,12 @@
             <h1> Nos services</h1>
 
             <section class="liste">
-                <div class="service1">
+                <div id="survol" class="service1">
                     <img src="site.jpg"/>
                     <h4> Création de sites web</h4>
                 </div>
 
-                <div class="service2">
+                <div id="survol" class="service2">
                     <img src="audit.jpg" />
                     <h4> Audit qualité</h4>
                 </div>
@@ -165,6 +169,20 @@
                 <p>Lorem Ipsum dolor Sit amet, consectetur adipiscina elit. Donec sed leo in nisi vehicula bibendum. Aliquam sit amet blandit nisi. sodales molesti.</p>
             </section>
             
+            <div id="diapo">
+                <div class="elements">
+                    <div class="element active">
+                        <img alt="ordinateur avec une plante et un téléphone sur une table" src="image2.jpg" />
+                    </div>
+
+                    <div class="element">
+                        <img alt="plante en gros plan" src="image1.jpg" />
+                    </div>
+                
+                    <div class="element">
+                        <img alt="classe étudiante" src="imgclass.jpg" />
+                    </div>
+                </div>
             
             <section class="contacts">
                 <div>
@@ -189,21 +207,28 @@
 
                 <article>
                     <div class="tel">
+                        <i class="fa-solid fa-phone"></i>
                         <p>+33 00 00 00 00 00 <br>+33 00 00 00 00 00</p>
                     </div>
 
                     <div class="map">
+                        <i class="fa-solid fa-location-dot"></i>
                         <p> 75001 Paris <br> France </p>
                     </div>
                 </article>
             </section>
-        
+
         <section class="bottom">
-            <div>
+            <div class="copyright">
                 <p> Copyright 2021 AGENCECO - all rights reserved</p>
             </div>
 
-        </section>
+            <div class="reseaux">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
 
+        </section>
     </body>
 </html>
