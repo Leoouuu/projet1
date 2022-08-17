@@ -11,13 +11,13 @@ body {
 }
 
 nav {
+  position: fixed;
   display: flex;
   justify-content: space-between;
-  padding: 5px;
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  padding: 15px;
+  background-color: white;
+  width: 100%;
+  z-index: 1;
 }
 
 a {
@@ -28,19 +28,20 @@ a {
   color: black;
   text-decoration: none;
   margin-right: 30px;
-  font-size: 16px;
+  font-size: 15px;
+  font-weight: 300;
 }
 
 #logo a {
-  color: green;
-  font-weight: bold;
-  font-size: 20px;
+  color: rgb(1, 77, 1);
+  font-weight: 700;
+  font-size: 25px;
 }
 
 .principal {
   display: flex;
   background-image: url("../images/image1.jpg");
-  height: 450px;
+  height: 700px;
   background-size: cover;
   flex-direction: column;
   justify-content: flex-end;
@@ -50,164 +51,251 @@ a {
 
 .title1 {
   color: white;
-  font-size: 35px;
+  font-size: 40px;
+  font-weight: lighter;
+  padding-bottom: 10px;
 }
 
 .title2 {
   color: #d5f31f;
-  font-size: 50px;
+  font-size: 45px;
+  font-weight: 400;
+  padding-bottom: 50px;
 }
 
-article.equipe > section.description h2 {
+h2 {
   color: #029d5b;
+  font-size: 35px;
+  font-weight: 500;
+  margin-top: 70px;
+  text-align: center;
 }
 
 .equipe > .description p {
   padding-bottom: 35px;
+  font-size: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-weight: 500;
 }
 
 .equipe img {
+  display: block;
   object-fit: cover;
   height: 150px;
   width: 150px;
   clip-path: circle();
+  justify-content: space-around;
 }
 
 .equipe {
   text-align: center;
   justify-content: flex;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
 .team {
   display: flex;
   justify-content: space-around;
+  gap: 20px;
+  align-items: center;
+  flex-direction: row;
 }
 
 .team p {
-  font-size: smaller;
+  font-size: 12px;
   margin-bottom: 100px;
+  font-weight: 200;
 }
 
 .chiffres {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: #053b44;
   text-align: center;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.chiffres > div {
+  width: 25%;
+  text-align: center;
+  justify-content: space-evenly;
+  padding-top: 20px;
+}
+
+section.chiffres > div.chiffre1 > span {
+  color: #d5f31f;
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 0%;
+}
+
+section.chiffres > div.chiffre1 > p {
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 5px;
+  margin-bottom: 40px;
+}
+
+section.services > article.liste {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
   padding-left: 100px;
   padding-right: 100px;
 }
 
-.chiffres p {
-  color: white;
-}
-
-.chiffres h2 {
-  color: #d5f31f;
-}
-
-.liste {
-  display: flex;
-  padding-block: 50px;
-  margin-left: 200px;
+section.services > article.liste img {
+  height: 150px;
+  width: 150px;
+  display: block;
   justify-content: space-around;
-  margin-right: 200px;
+  margin: auto;
+}
+
+section.services > article.liste > div.img > div#survol {
+  background-color: #efefef;
+  border-radius: 20px;
+  padding: 50px 70px;
   text-align: center;
 }
 
-.liste #survol {
-  height: 200px;
-  width: 200px;
+section.services > article.liste > div.img > div#survol:hover {
+  background-color: rgb(183, 181, 181);
+  border-radius: 20px;
 }
 
-.liste #survol:hover {
-  background-color: rgb(176, 176, 176);
-  border-radius: 10px;
+section.services > article.liste > div.img > h4 {
+  font-weight: 400;
+  font-size: 30px;
 }
 
-.services h1 {
-  color: #029d5b;
-  text-align: center;
-}
-
-.liste img {
-  height: 100px;
-  width: 120px;
-}
-
-form {
+section.formulaire {
   background-color: #053b44;
+  padding-left: 300px;
+  padding-right: 300px;
 }
 
-form h2 {
+section.formulaire > form > div.hform h2 {
   text-align: center;
   color: #d5f31f;
-  padding-top: 40px;
+  padding-top: 50px;
+  font-size: 40px;
+  font-weight: 500;
 }
 
-form p {
+section.formulaire > form > div.hform p {
   text-align: center;
   color: white;
-  padding-bottom: 30px;
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+section.formulaire > form > article.bodyform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.mep,
+.field-100 {
+  width: 100%;
+}
+
+.block {
+  flex-grow: 1;
+}
+
+.TV,
+.NC {
+  display: flex;
+  justify-content: stretch;
+  gap: 35px;
 }
 
 input::placeholder,
 textarea::placeholder {
   color: white;
+  font-weight: 300;
+  font-size: smaller;
 }
 
 section input,
 textarea {
-  margin-right: 20px;
-  margin-block: 10px;
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid white;
-}
-
-form > section > div.NC {
-  margin-left: 50px;
-  margin-right: 50px;
-  text-align: center;
-}
-
-form > section > div.TV {
-  margin-left: 50px;
-  margin-right: 50px;
-  text-align: center;
-}
-
-form > section > div.mail {
-  margin-left: 50px;
-  margin-right: 50px;
-  text-align: center;
-}
-
-form > section > div.message {
-  text-align: center;
-  margin-left: 50px;
-  margin-right: 50px;
+  border-bottom: 2px solid white;
+  padding-bottom: 5px;
 }
 
 textarea {
   resize: none;
-  font-family: sans-serif;
 }
 
 form > div.bouton {
   text-align: right;
-  margin-right: 80px;
+  padding-bottom: 50px;
+  margin-top: 20px;
 }
 
-form > div.bouton > button {
+form > div.bouton > input {
   border-radius: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
   text-align: center;
-  margin-bottom: 30px;
+  background-color: #d5f31f;
+  font-size: smaller;
+  height: 45px;
+  width: 140px;
+  border: none;
 }
 
+.propos {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 150px;
+  margin-top: 100px;
+  margin-bottom: 150px;
+  gap: 20px;
+}
+
+.photo img {
+  display: block;
+  border-radius: 30px;
+  width: 45%;
+  object-fit: contain;
+}
+
+.a_propos {
+  display: flex;
+  border: 1px solid #021518;
+  border-radius: 20px;
+  width: 45%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text h3 {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+.text p {
+  font-size: 13px;
+  font-weight: 200;
+  text-align: center;
+}
+
+.img {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* 
 section.propos {
   display: flex;
   padding-left: 20px;
@@ -250,12 +338,7 @@ section.propos > article.apropos > div.img img {
   height: 70px;
   width: 70px;
   border-radius: 50%;
-}
-
-section.galerie h1 {
-  color: #029d5b;
-  text-align: center;
-}
+} */
 
 section.galerie p {
   text-align: center;

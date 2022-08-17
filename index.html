@@ -15,7 +15,6 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/images/image1.jpg">
     <title>Agence web écologique </title>
-
     <script defer src="./js/index.js"></script>
 </head>
 
@@ -28,126 +27,181 @@
             </div>
 
             <div class="onglet">
-                <a href=""> <b>Accueil </b></a>
-                <a href=""> <b>Notre équipe</b> </a>
-                <a href=""> <b>Services</b> </a>
+                <a href="#accueil"> <b>Accueil </b></a>
+                <a href="#équipe"> <b>Notre équipe</b> </a>
+                <a href="#services"> <b>Services</b> </a>
                 <a href=""> <b>Témoignages</b> </a>
-                <a href=""> <b>Contactez-nous</b> </a>
-                <a href=""> <b>galerie</b> </a>
+                <a href="#contact"> <b>Contactez-nous</b> </a>
+                <a href="#galerie"> <b>Notre galerie</b> </a>
             </div>
 
         </nav>
 
-        <div class="principal">
+        <div class="principal" id="accueil">
             <div class="title1"> <b>Bienvenue dans votre</b> </div>
             <div class="title2"> <b>agence web écologique </b> </div>
         </div>
     </header>
 
-    <article class="equipe">
-        <section class="description">
+    <section class="equipe" id="équipe">
+        <article class="description">
             <h2> Notre équipe </h2>
-            <p>Lorem Ipsum dolor Sit amet, consectetur adipiscina elit. Donec sed leo in nisi vehicula
-                bibendum. Aliquam sit amet blandit nisi. sodales molesti.</p>
-        </section>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscina elit. Donec sed leo in nisi vehicula
+                bibendum. Aliquam sit amet blandit nisi. sodales molestie.</p>
+        </article>
 
-        <section class="team">
+        <article class="team">
             <div class="julie">
-                <img src="imageJulie.jpg" />
+                <img src="images/imageJulie.jpg" />
                 <h3> Julie Dupond</h3>
                 <p> Consectetur adipiscing elit. <br> Donec sed leo in nisi <br> vehicula bibendum</p>
             </div>
 
             <div class="romeo">
-                <img src="imageRomeo.jpg" />
+                <img src="images/imageRomeo.jpg" />
                 <h3> Romeo Sylla</h3>
                 <p> Consectetur adipiscing elit. <br> Donec sed leo in nisi <br> vehicula bibendum</p>
             </div>
 
             <div class="javier">
-                <img src="ImageJavier.jpg" />
+                <img src="images/ImageJavier.jpg" />
                 <h3> Javier Bardem</h3>
                 <p>Consectetur adipiscing elit. <br> Donec sed leo in nisi <br> vehicula bibendum</p>
             </div>
-        </section>
-    </article>
+        </article>
+    </section>
 
-    <article class="chiffres">
+    <section class="chiffres">
         <div class="chiffre1">
-            <h2>2500</h2>
-            <p>clients satisfaits</p>
+            <span class="nombre">2500</span>
+            <p class="texte">Clients satisfaits</p>
         </div>
 
-        <div class="chiffre2">
-            <h2>2500</h2>
-            <p>clients satisfaits</p>
+        <div class="chiffre1">
+            <span class="nombre">2500</span>
+            <p class="texte">Clients satisfaits</p>
         </div>
 
-        <div class="chiffre3">
-            <h2>2500</h2>
-            <p>clients satisfaits</p>
+        <div class="chiffre1">
+            <span class="nombre">2500</span>
+            <p class="texte">Clients satisfaits</p>
         </div>
 
-        <div class="chiffre4">
-            <h2>2500</h2>
-            <p>clients satisfaits</p>
+        <div class="chiffre1">
+            <span class="nombre">2500</span>
+            <p class="texte">Clients satisfaits</p>
         </div>
-    </article>
+    </section>
 
-    <article class="services">
-        <h1> Nos services</h1>
+    <section class="services" id="services">
+        <h2> Nos services</h2>
 
-        <section class="liste">
-            <div id="survol" class="service1">
-                <img src="site.jpg" />
-                <h4> Création de sites web</h4>
+        <article class="liste">
+            <div class="img">
+                <div id="survol">
+                    <img src="images/site.jpg" alt="image1">
+                </div>
+
+                <h4>
+                    Création de sites web
+                </h4>
             </div>
 
-            <div id="survol" class="service2">
-                <img src="audit.jpg" />
-                <h4> Audit qualité</h4>
+            <div class="img">
+                <div id="survol">
+                    <img src="images/audit.jpg" alt="image2">
+                </div>
+                <h4>
+                    Audit qualité
+                </h4>
             </div>
-        </section>
 
-    </article>
+        </article>
 
-    <article class="Formulaire">
+    </section>
 
-        <Form>
-            <Div class="hform">
+    <section class="formulaire" id="contact">
+        <form action="contact">
+            <div class="hform">
                 <h2> Contactez-nous</h2>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed leo in</p>
-            </Div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sel leo in.</p>
+            </div>
 
-            <section class="bodyform">
-                <div class="NC">
-                    <input placeholder="Nom" type="text" style="width: 45%;">
-                    <input placeholder="Catégorie" type="text" style="width:45%">
+            <article class="bodyform">
+                <div class="NC mep">
+                    <input placeholder="Nom" type="text" class="nom block">
+                    <input placeholder="Catégorie" type="text" class="cat block">
                 </div>
 
-                <div class="TV">
-                    <input placeholder="Téléphone" type="text" style="width:45%">
-                    <input placeholder="Ville" type="text" style="width:45%">
+                <div class="TV mep">
+                    <input placeholder="Téléphone" type="text" class="tel block">
+                    <input placeholder="Ville" type="text" class="ville block">
                 </div>
 
-                <div class="mail">
-                    <input placeholder="Email" type="text" style="width:94%">
+                <div class="mail mep">
+                    <input placeholder="Email" type="text" class="field-100">
                 </div>
 
-                <div class="message">
-                    <textarea placeholder="Message" type="text" style="width:94%" rows="10"></textarea>
+                <div class="message mep">
+                    <textarea placeholder="Message" type="text" rows="10" maxlength="1500" class="field-100"></textarea>
                 </div>
-            </section>
+            </article>
 
             <div class="bouton">
-                <button type="submit" style="background-color:#d5f31f; width: 100px">Envoyer</button>
+                <input type="submit" value="Envoyer" class="boutonform">
             </div>
-        </Form>
-    </article>
+
+        </form>
+    </section>
 
     <section class="propos">
+        <div class="photo">
+            <img src="images/imgclass.jpg" alt="image d'une classe">
+        </div>
+
+        <article class="a_propos">
+            <div class="text">
+                <h3>
+                    A propos de nous
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adiscing elit. <br> Donec sed leo in adipiscing.
+                </p>
+            </div>
+
+            <div class="img">
+                <div id="image">
+                    <img src="images/ecolo.jpg" alt="image1">
+                </div>
+                <p>
+                    Ecologique
+                </p>
+            </div>
+
+            <div class="img">
+                <div id="image">
+                    <img src="images/responsable.jpg" alt="image1">
+                </div>
+                <p>
+                    Responsable
+                </p>
+            </div>
+
+            <div class="img">
+                <div id="image">
+                    <img src="images/assistance.jpg" alt="image1">
+                </div>
+                <p>
+                    24/7 Assistance
+                </p>
+            </div>
+        </article>
+    </section>
+
+    <!-- 
+    <section class="propos">
         <article class="photo">
-            <img src="imgclass.jpg" />
+            <img src="images/imgclass.jpg" />
         </article>
 
         <article class="apropos">
@@ -158,12 +212,12 @@
 
             <div class="img">
                 <div class="ecolo">
-                    <img src="ecolo.jpg" />
+                    <img src="images/ecolo.jpg" />
                     <p> Ecologique</p>
                 </div>
 
                 <div class="responsable">
-                    <img src="responsable.jpg" />
+                    <img src="images/responsable.jpg" />
                     <p> Responsable</p>
                 </div>
 
@@ -173,17 +227,17 @@
                 </div>
             </div>
         </article>
-    </section>
+    </section> -->
 
-    <section class="galerie">
-        <h1> Notre galerie </h1>
+    <section class="galerie" id="galerie">
+        <h2> Notre galerie </h2>
         <p>Lorem Ipsum dolor Sit amet, consectetur adipiscina elit. Donec sed leo in nisi vehicula bibendum. Aliquam sit
             amet blandit nisi. sodales molesti.</p>
     </section>
 
     <div class="slideshow-container">
         <div class="mySlides fade">
-            <img alt="ordinateur avec une plante et un téléphone sur une table" src="image2.jpg" />
+            <img alt="ordinateur avec une plante et un téléphone sur une table" src="images/image2.jpg" />
         </div>
 
         <div class="mySlides fade">
@@ -191,7 +245,7 @@
         </div>
 
         <div class="mySlides fade">
-            <img alt="classe étudiante" src="imgclass.jpg" />
+            <img alt="classe étudiante" src="images/imgclass.jpg" />
         </div>
 
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -244,9 +298,6 @@
             <i class="fa-brands fa-instagram"></i>
         </div>
     </section>
-
-
-
 
 </body>
 
