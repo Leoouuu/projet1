@@ -169,119 +169,100 @@
                 </p>
             </div>
 
-            <div class="img">
-                <div id="image">
-                    <img src="images/ecolo.jpg" alt="image1">
+            <div class="imgtxt">
+                <div class="img">
+                    <div id="imgs">
+                        <img src="images/ecolo.jpg" alt="image1">
+                    </div>
+                    <p>
+                        Ecologique
+                    </p>
                 </div>
-                <p>
-                    Ecologique
-                </p>
-            </div>
 
-            <div class="img">
-                <div id="image">
-                    <img src="images/responsable.jpg" alt="image1">
+                <div class="img">
+                    <div id="imgs">
+                        <img src="images/responsable.jpg" alt="image1">
+                    </div>
+                    <p>
+                        Responsable
+                    </p>
                 </div>
-                <p>
-                    Responsable
-                </p>
-            </div>
 
-            <div class="img">
-                <div id="image">
-                    <img src="images/assistance.jpg" alt="image1">
+                <div class="img">
+                    <div id="imgs">
+                        <img src="images/assistance.jpg" alt="image1">
+                    </div>
+                    <p>
+                        24/7 Assistance
+                    </p>
                 </div>
-                <p>
-                    24/7 Assistance
-                </p>
             </div>
         </article>
     </section>
-
-    <!-- 
-    <section class="propos">
-        <article class="photo">
-            <img src="images/imgclass.jpg" />
-        </article>
-
-        <article class="apropos">
-            <div class="text">
-                <h3> A propos de nous</h3>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Donec sed leo in adipiscing.</p>
-            </div>
-
-            <div class="img">
-                <div class="ecolo">
-                    <img src="images/ecolo.jpg" />
-                    <p> Ecologique</p>
-                </div>
-
-                <div class="responsable">
-                    <img src="images/responsable.jpg" />
-                    <p> Responsable</p>
-                </div>
-
-                <div class="assistance">
-                    <img src="images/assistance.jpg" />
-                    <p> 27/4 Assistance</p>
-                </div>
-            </div>
-        </article>
-    </section> -->
 
     <section class="galerie" id="galerie">
         <h2> Notre galerie </h2>
         <p>Lorem Ipsum dolor Sit amet, consectetur adipiscina elit. Donec sed leo in nisi vehicula bibendum. Aliquam sit
             amet blandit nisi. sodales molesti.</p>
+
+
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img alt="ordinateur avec une plante et un téléphone sur une table" src="images/image2.jpg" />
+            </div>
+
+            <div class="mySlides fade">
+                <img alt="plante en gros plan" src="images/image1.jpg" />
+            </div>
+
+            <div class="mySlides fade">
+                <img alt="classe étudiante" src="images/imgclass.jpg" />
+            </div>
+        </div>
+
+        <div class="button">
+            <div class="left">
+                <a class="prev" onclick="plusSlides(-1)">
+                    <i id="buttons" class="fa-regular fa-angle-left"></i>
+                </a>
+            </div>
+            <div class=" right">
+                <a class="next" onclick="plusSlides(1)">
+                    <i id="buttons" class="fa-regular fa-angle-right"></i>
+                </a>
+            </div>
+        </div>
     </section>
 
-    <div class="slideshow-container">
-        <div class="mySlides fade">
-            <img alt="ordinateur avec une plante et un téléphone sur une table" src="images/image2.jpg" />
-        </div>
-
-        <div class="mySlides fade">
-            <img alt="plante en gros plan" src="images/image1.jpg" />
-        </div>
-
-        <div class="mySlides fade">
-            <img alt="classe étudiante" src="images/imgclass.jpg" />
-        </div>
-
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-    </div>
-
     <section class="contacts">
-        <div>
+        <div class="element">
             <h4> Content</h4>
             <p> consectetur <br> adipiscing</p>
         </div>
 
-        <div>
+        <div class="element">
             <h4> Informations</h4>
             <p> consectetur <br> adipiscing</p>
         </div>
 
-        <div>
+        <div class="element">
             <h4> Service</h4>
             <p> consectetur <br> adipiscing</p>
         </div>
 
-        <div>
+        <div class="element">
             <h4> Aide </h4>
             <p> consectetur <br> adipiscing</p>
         </div>
 
-        <article>
-            <div class="tel">
-                <i class="fa-solid fa-phone"></i>
+        <article class="coordonnées">
+            <div class="tel données">
+                <i class="fa-solid fa-phone" id="icone"></i>
                 <p>+33 00 00 00 00 00 <br>+33 00 00 00 00 00</p>
             </div>
 
-            <div class="map">
-                <i class="fa-solid fa-location-dot"></i>
+            <div class="map données">
+                <i class="fa-solid fa-location-dot" id="icone"></i>
                 <p> 75001 Paris <br> France </p>
             </div>
         </article>

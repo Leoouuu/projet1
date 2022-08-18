@@ -255,145 +255,159 @@ form > div.bouton > input {
 
 .propos {
   display: flex;
-  justify-content: space-around;
-  padding: 0 150px;
+  justify-content: space-evenly;
+  padding: 0 100px;
   margin-top: 100px;
   margin-bottom: 150px;
-  gap: 20px;
+  gap: 50px;
+}
+
+.photo {
+  display: block;
+  width: 50%;
 }
 
 .photo img {
-  display: block;
   border-radius: 30px;
-  width: 45%;
-  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .a_propos {
   display: flex;
-  border: 1px solid #021518;
+  border: 2px solid #021518;
   border-radius: 20px;
-  width: 45%;
+  width: 50%;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
 }
 
 .text h3 {
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 30px;
+  font-weight: 500;
   text-align: center;
 }
 .text p {
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 200;
   text-align: center;
 }
 
+.imgtxt {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
 .img {
   display: flex;
+  width: 33.33%;
+  justify-content: space-around;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  gap: 5px;
 }
 
-/* 
-section.propos {
+#imgs {
   display: flex;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 40px;
-  padding-bottom: 50px;
-  margin-left: 20px;
-  margin-right: 20px;
-  text-align: center;
-  justify-content: space-around;
-}
-
-section.propos > article.photo > img {
-  border-radius: 30px;
-  display: flex;
-  object-fit: contain;
-  height: auto;
-  width: 400px;
-}
-
-section.propos > article.apropos {
-  border: 1px solid;
-  border-radius: 10px;
-  height: auto;
-  width: 50%;
-}
-
-section.propos > article.apropos > div.text p {
-  font-size: smaller;
-}
-
-section.propos > article.apropos > div.img {
-  display: flex;
-  justify-content: space-around;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
+  border: 5px solid #053b44;
+  margin: auto;
 }
 
-section.propos > article.apropos > div.img img {
-  border: 3px solid;
-  height: 70px;
-  width: 70px;
-  border-radius: 50%;
-} */
+.imgtxt img {
+  display: block;
+  width: 33.33%;
+  height: 33.33%;
+  margin: auto;
+}
+
+.galerie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 200px;
+  padding-right: 200px;
+}
 
 section.galerie p {
   text-align: center;
-  padding-left: 80px;
-  padding-right: 80px;
+  margin-top: 40px;
+  padding-left: 120px;
+  padding-right: 120px;
   padding-bottom: 80px;
+  font-size: 20px;
+  font-weight: 500;
 }
-
 .mySlides {
   display: none;
 }
 
-div.slideshow-container > img {
-  vertical-align: middle;
+.slideshow-container {
+  width: 80%;
+  position: relative;
+  height: 30%;
+  margin: auto;
 }
 
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-  box-sizing: border-box;
+.mySlides > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.button {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-left: 150px;
+  padding-right: 150px;
+  margin-top: 25px;
+}
+
+.left,
+.right {
+  width: 50px;
+  height: 50px;
+  border: black 1px solid;
+  border-radius: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 50px;
 }
 
 .prev,
 .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
+  width: 50%;
   font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+  font-size: 25px;
+  text-align: center;
 }
-/* Position de "next button" à la droite */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-/* En survol, ajoutez la couleur noire de l'arrière-plan avec un peu see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+
+.left:hover,
+.right:hover {
+  background-color: black;
+  color: #d5f31f;
 }
 
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 0.2s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 0.2s;
 }
+
+#buttons {
+  width: 50%;
+}
+
 @-webkit-keyframes fade {
   from {
     opacity: 0.4;
@@ -402,6 +416,7 @@ div.slideshow-container > img {
     opacity: 1;
   }
 }
+
 @keyframes fade {
   from {
     opacity: 0.4;
@@ -426,15 +441,21 @@ section.contacts {
   padding-left: 70px;
   padding-right: 70px;
   padding-bottom: 30px;
+  padding-top: 30px;
 }
 
-section.contacts p {
-  font-size: smaller;
+.element h4 {
+  font-size: 20px;
+  font-weight: 600;
 }
 
-article > div.tel {
-  display: flex;
-  margin-top: 20px;
+.element p {
+  font-size: 15px;
+  font-weight: 200;
+}
+
+#icone {
+  color: #d5f31f;
 }
 
 section.bottom {
@@ -443,6 +464,15 @@ section.bottom {
   display: flex;
   justify-content: space-between;
   padding-bottom: 20px;
+}
+
+.coordonnées {
+  width: 15%;
+}
+
+.données {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 section.bottom p {
@@ -462,7 +492,7 @@ section.bottom > div.reseaux i {
   height: 30px;
   width: 30px;
   border: white 1px solid;
-  border-radius: 2px;
+  border-radius: 10px;
   text-align: center;
   padding-top: 2%;
 }
