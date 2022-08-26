@@ -46,7 +46,7 @@ a {
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
-  padding: 20px 70px;
+  padding: 20px 150px;
 }
 
 .title1 {
@@ -515,4 +515,50 @@ section.bottom > div.reseaux i {
 
 section.bottom > div.copyright {
   padding-top: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  .principal {
+    padding-top: 150px;
+    height: 100%;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .equipe {
+    text-align: center;
+    padding: 20px 0 20px 0;
+    margin: 0;
+  }
+
+  .team {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .team img {
+    display: block;
+    align-items: center;
+    margin: auto;
+    padding: 0;
+  }
+
+  .team p {
+    font-weight: 400;
+    font-size: 15px;
+  }
+
+  .chiffres {
+    padding: 0;
+  }
+  .chiffre1 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  .mob {
+    display: none;
+  }
 }
