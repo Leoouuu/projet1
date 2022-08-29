@@ -12,7 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" rel="stylesheet"
+        type="text/css">
     <link rel="icon" type="image/x-icon" href="/images/image1.jpg">
     <title>Agence web écologique </title>
     <script defer src="./js/index.js"></script>
@@ -33,6 +34,10 @@
                 <a href=""> <b>Témoignages</b> </a>
                 <a href="#contact"> <b>Contactez-nous</b> </a>
                 <a href="#galerie"> <b>Notre galerie</b> </a>
+            </div>
+
+            <div class="mobmenu">
+                <i class="fa-solid fa-bars"></i>
             </div>
 
         </nav>
@@ -72,7 +77,7 @@
     </section>
 
     <section class="chiffres">
-        <div class="chiffre1">
+        <div class="chiffre1 mob">
             <span class="nombre affmob">2500</span>
             <p class="texte affmob">Clients satisfaits</p>
         </div>
@@ -223,12 +228,13 @@
         <div class="button">
             <div class="left">
                 <a class="prev" onclick="plusSlides(-1)">
-                    <i id="buttons" class="fa-regular fa-angle-left"></i>
+                    <i id="buttons" class="fa fa-angle-left"></i>
                 </a>
             </div>
             <div class=" right">
                 <a class="next" onclick="plusSlides(1)">
-                    <i id="buttons" class="fa-regular fa-angle-right"></i>
+                    <i id="buttons" class="fa fa-angle-right">
+                    </i>
                 </a>
             </div>
         </div>
@@ -256,29 +262,31 @@
         </div>
 
         <article class="coordonnées">
-            <div class="tel données">
+            <div class="tel données" id="données">
                 <i class="fa-solid fa-phone" id="icone"></i>
                 <p>+33 00 00 00 00 00 <br>+33 00 00 00 00 00</p>
             </div>
 
-            <div class="map données">
+            <div class="map données" id="données">
                 <i class="fa-solid fa-location-dot" id="icone"></i>
                 <p> 75001 Paris <br> France </p>
             </div>
         </article>
     </section>
 
-    <section class="bottom">
-        <div class="copyright">
-            <p> Copyright © 2021 AGENCECO - all rights reserved</p>
-        </div>
+    <footer>
+        <section class="bottom">
+            <div class="copyright" id="copyright">
+                <p> Copyright © 2021 AGENCECO - all rights reserved</p>
+            </div>
 
-        <div class="reseaux">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-square-twitter"></i>
-            <i class="fa-brands fa-instagram"></i>
-        </div>
-    </section>
+            <div class="reseaux" id="reseaux">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </section>
+    </footer>
 
 </body>
 
