@@ -178,13 +178,12 @@ h2 {
   object-fit: cover;
   height: 150px;
   width: 150px;
-  clip-path: circle();
+  clip-path: circle(50%);
   justify-content: space-around;
 }
 
 .equipe {
   text-align: center;
-  justify-content: flex;
   margin-left: 200px;
   margin-right: 200px;
 }
@@ -500,8 +499,6 @@ form > div.bouton > input {
 }
 
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 0.2s;
   animation-name: fade;
   animation-duration: 0.2s;
 }
@@ -509,15 +506,6 @@ form > div.bouton > input {
 #buttong,
 #buttond {
   width: 50%;
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 @keyframes fade {
@@ -674,10 +662,6 @@ section.contacts {
     gap: 15px;
   }
 
-  .imagetexte p {
-    padding: auto;
-  }
-
   .imgs {
     width: 100px;
     height: 100px;
@@ -694,7 +678,7 @@ section.contacts {
   .chiffre1 {
     width: 100%;
     margin: 0;
-    padding: 10 0 0 0;
+    padding: 10px 0 0 0;
   }
 }
 
