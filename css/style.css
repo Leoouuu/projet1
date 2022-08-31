@@ -160,14 +160,14 @@ section.services > article.liste img {
   margin: auto;
 }
 
-.services #survol {
+.survol {
   background-color: #efefef;
   border-radius: 20px;
   padding: 50px 70px;
   text-align: center;
 }
 
-.services #survol:hover {
+.survol:hover {
   background-color: rgb(183, 181, 181);
   border-radius: 20px;
 }
@@ -315,7 +315,7 @@ form > div.bouton > input {
   width: 100%;
 }
 
-.img {
+.imagetexte {
   display: flex;
   width: 33.33%;
   justify-content: space-around;
@@ -324,7 +324,7 @@ form > div.bouton > input {
   gap: 5px;
 }
 
-#imgs {
+.imgs {
   display: flex;
   width: 140px;
   height: 140px;
@@ -417,7 +417,8 @@ form > div.bouton > input {
   animation-duration: 0.2s;
 }
 
-#buttons {
+#buttong,
+#buttond {
   width: 50%;
 }
 
@@ -464,7 +465,8 @@ section.contacts {
   font-weight: 200;
 }
 
-#icone {
+#iconetel,
+#iconemap {
   color: #d5f31f;
 }
 
@@ -587,11 +589,11 @@ section.bottom > div.copyright {
     align-items: center;
   }
 
-  .services #survol {
+  .survol {
     padding: 40px;
   }
 
-  .services #survol img {
+  .survol img {
     width: 70px;
     height: 70px;
   }
@@ -650,11 +652,11 @@ section.bottom > div.copyright {
     gap: 15px;
   }
 
-  .imgs p {
+  .imagetexte p {
     padding: auto;
   }
 
-  #imgs {
+  .imgs {
     width: 100px;
     height: 100px;
   }
@@ -694,7 +696,7 @@ section.bottom > div.copyright {
     align-items: center;
   }
 
-  #données p {
+  .données p {
     font-size: 10px;
   }
 
