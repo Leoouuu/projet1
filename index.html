@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="agence web écologique">
+    <meta descritpion="agence web écologique">
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,33 +20,33 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <nav>
 
-            <div id="logo">
+            <div class="logo">
                 <a href="#"> Agenc<em>eco</em> </a>
             </div>
 
-            <div class="onglet">
-                <a href="#accueil"> <b>Accueil </b></a>
-                <a href="#équipe"> <b>Notre équipe</b> </a>
-                <a href="#services"> <b>Services</b> </a>
-                <a href=""> <b>Témoignages</b> </a>
-                <a href="#contact"> <b>Contactez-nous</b> </a>
-                <a href="#galerie"> <b>Notre galerie</b> </a>
-            </div>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
 
-            <div class="mobmenu">
-                <i class="fa-solid fa-bars"></i>
-            </div>
+            <ul class="menu">
+                <li><a href="#accueil"> <b>Accueil </b></a></li>
+                <li><a href="#équipe"> <b>Notre équipe</b> </a></li>
+                <li><a href="#services"> <b>Services</b> </a></li>
+                <li><a href=""> <b>Témoignages</b> </a></li>
+                <li><a href="#contact"> <b>Contactez-nous</b> </a></li>
+                <li><a href="#galerie"> <b>Notre galerie</b> </a></li>
+            </ul>
 
         </nav>
-
-        <div class="principal" id="accueil">
-            <div class="title1"> <b>Bienvenue dans votre</b> </div>
-            <div class="title2"> <b>agence web écologique </b> </div>
-        </div>
     </header>
+
+    <div class="principal" id="accueil">
+        <div class="title1"> <b>Bienvenue dans votre</b> </div>
+        <div class="title2"> <b>agence web écologique </b> </div>
+    </div>
+
 
     <section class="equipe" id="équipe">
         <article class="description">
@@ -103,7 +103,7 @@
 
         <article class="liste">
             <div class="img">
-                <div class="survol">
+                <div class="survol ">
                     <img src="images/site.jpg" alt="image1">
                 </div>
 
