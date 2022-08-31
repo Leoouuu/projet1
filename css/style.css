@@ -219,14 +219,14 @@ h2 {
   padding-top: 20px;
 }
 
-section.chiffres > div.chiffre1 > span {
+.chiffres > div.chiffre1 > span {
   color: #d5f31f;
   font-weight: bold;
   font-size: 40px;
   margin-bottom: 0%;
 }
 
-section.chiffres > div.chiffre1 > p {
+.chiffres > div.chiffre1 > p {
   color: white;
   font-size: 15px;
   font-weight: 400;
@@ -288,7 +288,7 @@ section.formulaire > form > div.hform p {
   margin-bottom: 30px;
 }
 
-section.formulaire > form > article.bodyform {
+section.formulaire > form > .bodyform {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -576,7 +576,7 @@ section.contacts {
   font-weight: 200;
 }
 
-section.bottom {
+.bottom {
   background-color: #021518;
   color: white;
   display: flex;
@@ -584,7 +584,7 @@ section.bottom {
   padding-bottom: 20px;
 }
 
-section.bottom p {
+.bottom p {
   text-align: left;
   padding-left: 70px;
   padding-bottom: 20px;
@@ -592,7 +592,7 @@ section.bottom p {
   font-weight: 200;
 }
 
-section.bottom > div.reseaux {
+.bottom > div.reseaux {
   display: flex;
   gap: 10px;
   height: 100px;
@@ -600,7 +600,7 @@ section.bottom > div.reseaux {
   padding-top: 40px;
 }
 
-section.bottom > div.reseaux i {
+.bottom > div.reseaux i {
   height: 30px;
   width: 30px;
   border: white 1px solid;
@@ -609,7 +609,7 @@ section.bottom > div.reseaux i {
   padding-top: 2.5%;
 }
 
-section.bottom > div.copyright {
+.bottom > div.copyright {
   padding-top: 30px;
 }
 
