@@ -432,8 +432,8 @@ form > div.bouton > input {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 200px;
-  padding-right: 200px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 #galerie p {
@@ -450,7 +450,7 @@ form > div.bouton > input {
 }
 
 .slideshow-container {
-  width: 80%;
+  width: 100%;
   position: relative;
   height: 30%;
   margin: auto;
@@ -469,7 +469,6 @@ form > div.bouton > input {
   width: 100%;
   justify-content: space-between;
   margin-top: 25px;
-  padding: 0 150px;
 }
 
 .left,
@@ -639,11 +638,6 @@ section.contacts {
   .bouton {
     padding-right: 10px;
   }
-
-  .galerie {
-    padding-left: 100px;
-    padding-right: 100px;
-  }
 }
 
 @media only screen and (max-width: 1150px) {
@@ -679,6 +673,10 @@ section.contacts {
     width: 100%;
     margin: 0;
     padding: 10px 0 0 0;
+  }
+
+  .galerie {
+    padding: 0 100px;
   }
 }
 
@@ -751,6 +749,11 @@ section.contacts {
 
   .formulaire {
     padding: 0;
+  }
+
+  section input,
+  textarea {
+    margin-top: 12px;
   }
 
   .bodyform {
